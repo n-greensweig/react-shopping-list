@@ -1,8 +1,8 @@
-
-
 function FoodItem(props) {
 
-    
+    return (
+        <li>{props.list.name}</li>
+    )
 
 }
 
