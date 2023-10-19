@@ -5,7 +5,7 @@ import Header from '../Header/Header.jsx'
 import Form from '../Form/Form.jsx'
 import Clear from '../Clear/Clear.jsx'
 import Reset from '../Reset/Reset.jsx'
-// import FoodItem from '../FoodItem/FoodItem.jsx';
+import FoodItem from '../FoodItem/FoodItem.jsx';
 import './App.css';
 
 function App() {
@@ -41,12 +41,9 @@ function App() {
                 <Form />
                 <Reset />
                 <Clear />
-                {JSON.stringify(itemList)}
-                {/* {
-                itemList.map((item) => {
-                    return <FoodItem key={item.id} item={item} />
-                })    
-                } */}
+                {
+                    itemList.map(item => <FoodItem key={item.id} item={item} />)
+                }
             </main>
         </div>
     );
