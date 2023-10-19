@@ -22,6 +22,16 @@ This shopping list app allows users to add items to and delete items from a shop
 
 ### Part 1 - Set up
 - [ ] Create a database called ```fs-react-shopping```
-- 
+- [ ] Create router
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+### Part 2 - Create React Components
+- [ ] Create the following React components: Form (with save button), Reset button, Clear button, Item, ItemList
+
+### Part 3 - Append to the DOM
+- [ ] Add React components to the DOM
+
+### Part 4 - Styling and validation
+- [ ] Add sweetalert confirmation messages
+- [ ] Require responses in JSX with require keyword
+- [ ] Also send back response from server if data is not formatted correctly for database
+- [ ] Add red, green, and hover effects to buttons
