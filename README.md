@@ -21,8 +21,8 @@ This shopping list app allows users to add items to and delete items from a shop
 ## Steps
 
 ### Part 1 - Set up
-- [ ] Create a database called ```fs-react-shopping```
-- [ ] Create router
+- [x] Create a database called ```fs-react-shopping```
+- [x] Create router
 
 ### Part 2 - Create React Components
 - [ ] Create the following React components: Form (with save button), Reset button, Clear button, Item, ItemList
