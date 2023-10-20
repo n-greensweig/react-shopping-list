@@ -11,7 +11,7 @@ This shopping list app allows users to add items to and delete items from a shop
 ## Installation
 
 1. Create a database named ```fs-react-shopping```
-2. The queries in the database.sql file are set up to create all necessary tables and populate the needed data to allow the app to run correctly. The project is built on Postgres, so you will need to have Postgress installed for the app to work. We recommend using Postico to run those queries as that was used to create the queries
+2. The queries in the database.sql file are set up to create all necessary tables and populate the needed data to allow the app to run correctly. The project is built on PostgreSQL, so you will need to have PostgreSQL installed for the app to work. We recommend using Postico to run those queries as that was used to create the queries
 3. Open up your editor of choice and run an ```npm install```
 4. Run ```npm run server``` in your terminal
 5. Run ```npm run client``` in your terminal
