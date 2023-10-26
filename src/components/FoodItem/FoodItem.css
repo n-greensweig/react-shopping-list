@@ -2,3 +2,10 @@
     color:red;
 }
 
+.highlight {
+    background-color: grey;
+}
+
+.normal {
+    background-color: white;
+}

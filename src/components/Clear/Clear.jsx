@@ -1,6 +1,9 @@
 import axios from 'axios';
+import swal from "sweetalert";
 
 function Clear(props) {
+
+    swal
 
     const clickHandler = () => {
       axios.delete(`/item`).then((response) => {
