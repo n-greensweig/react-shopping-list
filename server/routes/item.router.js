@@ -57,6 +57,20 @@ router.put('/:id', (req,res) => {
         });
 });
 
+// PUT route to reset purchased status to FALSE for all items
+router.put('/', (req,res) => {
+    const queryText = `UPDATE "list" SET "purchased" = NOT "purchased" WHERE "purchased" = $1;`;
+
+    pool.query(queryText, [true])
+        .then((result) => {
+            res.sendStatus(200);
+        })
+        .catch((error) => {
+            console.log('Error in PUT', error);
+            res.sendStatus(500);
+        });
+});
+
 
 
 

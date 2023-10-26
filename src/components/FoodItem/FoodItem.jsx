@@ -1,4 +1,6 @@
 import axios from 'axios';
+import './FoodItem.css';
+
 function FoodItem(props) {
 
     console.log(props);
@@ -31,8 +33,8 @@ function FoodItem(props) {
     return (
         <>
             <li>{props.quantity} {props.unit} of {props.name}</li>
-            <button onClick={togglePurchased}>{props.purchased ? 'Purchased' : 'Buy'}</button>
-            <button onClick={deleteItem}>Delete</button>
+            <button onClick={togglePurchased}>{props.purchased ? 'Purchased!' : 'Buy'}</button>
+            <button id="delete-button" onClick={deleteItem}>Delete</button>
         </>
     )
 
