@@ -44,7 +44,18 @@ VALUES ($1, $2, $3);
 
 
 // PUT route 
-
+router.put('/:id', (req,res) => {
+    console.log('PUT /item', req.params);
+    const queryText = `UPDATE "list" SET "purchased" = NOT "purchased" WHERE "id" = $1;`;
+    pool.query(queryText, [req.params.id])
+        .then((result) => {
+            res.sendStatus(200);
+        })
+        .catch((error) => {
+            console.log('Error in PUT', error);
+            res.sendStatus(500);
+        });
+});
 
 
 

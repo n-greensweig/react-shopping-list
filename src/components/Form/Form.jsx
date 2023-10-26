@@ -17,7 +17,6 @@ function Form(props) {
             unit: newUnit,
         }).then(response => {
 
-
             // Clear our inputs
             setNewItem('');
             setNewQuantity('');

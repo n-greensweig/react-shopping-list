@@ -41,7 +41,7 @@ function App() {
                 <Form getItemList={getItemList} />
                 <Reset />
                 <Clear getItemList={getItemList} />
-                <FoodList itemList={itemList} />
+                <FoodList getItemList={getItemList} itemList={itemList} />
             </main>
         </div>
     );

@@ -3,7 +3,7 @@
 CREATE TABLE "list" (
 "id" SERIAL PRIMARY KEY,
 "name" VARCHAR(80) NOT NULL,
-"quantity" DECIMAL(10,4) NOT NULL,
+"quantity" DECIMAL(10,2) NOT NULL,
 "unit" VARCHAR(80) NOT NULL,
 "purchased" BOOLEAN DEFAULT FALSE
 );
