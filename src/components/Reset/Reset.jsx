@@ -32,7 +32,7 @@ function Reset(props) {
                 swal('Your items remain as they were.');
             }
 
-        })
+        });
 
 
     };
