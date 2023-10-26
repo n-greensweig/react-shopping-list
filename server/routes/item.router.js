@@ -60,12 +60,28 @@ router.put('/:id', (req,res) => {
 
 
 
-// DELETE route
+// DELETE route for ALL food items
 
 router.delete('/', (req, res) => {
     let queryText = `DELETE FROM "list"`;
     pool.query(queryText)
     .then(result => {
+        res.sendStatus(200);
+    })
+    .catch((error) => {
+        console.log('Error in delete', error);
+        res.sendStatus(500);
+    });
+});
+
+
+
+//DELETE route for SPECIFIC food item
+router.delete('/:id', (req, res) => {
+    console.log('DELETE /item', req.params);
+    let queryText = `DELETE FROM "list" WHERE "id" = $1;`;
+    pool.query(queryText, [req.params.id])
+    .then((result) => {
         res.sendStatus(200);
     })
     .catch((error) => {
