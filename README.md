@@ -25,7 +25,7 @@ This shopping list app allows users to add items to and delete items from a shop
 - [x] Create router
 
 ### Part 2 - Create React Components
-- [ ] Create the following React components: Form (with save button), Reset button, Clear button, Item, ItemList
+- [] Create the following React components: Form (with save button), Reset button, Clear button, Item, ItemList
 
 ### Part 3 - Append to the DOM
 - [ ] Add React components to the DOM

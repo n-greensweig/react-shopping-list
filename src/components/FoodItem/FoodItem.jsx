@@ -1,9 +1,7 @@
 function FoodItem(props) {
 
-    console.log(props);
-
     return (
-        <li>{props.item.name}</li>
+        <li>{props.quantity} {props.unit} of {props.name}</li>
     )
 
 }

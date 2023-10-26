@@ -6,6 +6,7 @@ import Form from '../Form/Form.jsx'
 import Clear from '../Clear/Clear.jsx'
 import Reset from '../Reset/Reset.jsx'
 import FoodItem from '../FoodItem/FoodItem.jsx';
+import FoodList from '../FoodList/FoodList.jsx';
 import './App.css';
 
 function App() {
@@ -23,11 +24,10 @@ function App() {
         });
 
     };
-
+    
     useEffect(() => {
         getItemList();
     }, []);
-
 
     console.log(itemList);
 
@@ -38,12 +38,10 @@ function App() {
             <Header />
             <main>
                 <p>Add an Item</p>
-                <Form />
+                <Form getItemList={getItemList} />
                 <Reset />
-                <Clear />
-                {
-                    itemList.map(item => <FoodItem key={item.id} item={item} />)
-                }
+                <Clear getItemList={getItemList} />
+                <FoodList itemList={itemList} />
             </main>
         </div>
     );

@@ -21,18 +21,47 @@ router.get('/', (req, res) => {
 });
 
 
-//POST route
+// POST route
+router.post('/', (req, res) => {
+
+    console.log(req.body);
+
+    let queryText = `
+INSERT INTO "list" ("name", "quantity", "unit")
+VALUES ($1, $2, $3);
+`;
+
+    pool.query(queryText, [req.body.item, req.body.quantity, req.body.unit])
+    .then(response => {
+        res.sendStatus(200);
+    }).catch(error => {
+        console.error(error);
+        res.sendStatus(500);
+    });
+
+});
+
+
+
+// PUT route 
 
 
 
 
-//PUT route 
 
+// DELETE route
 
-
-
-//DELETE route
-
+router.delete('/', (req, res) => {
+    let queryText = `DELETE FROM "list"`;
+    pool.query(queryText)
+    .then(result => {
+        res.sendStatus(200);
+    })
+    .catch((error) => {
+        console.log('Error in delete', error);
+        res.sendStatus(500);
+    });
+});
 
 
 
