@@ -40,7 +40,7 @@ function FoodItem(props) {
                         <CardContent>
                             <Typography>{props.quantity} {props.unit} of {props.name}</Typography>
                             <CardActions>
-                                <Button variant='contained' onClick={togglePurchased}>{props.purchased ? 'Purchased!' : 'Buy'}</Button>
+                                <Button variant='contained' onClick={togglePurchased} >{props.purchased ? 'Purchased!' : 'Buy'}</Button>
                                 <Button variant='outlined' id='delete-button' onClick={deleteItem}>Delete</Button>
                             </CardActions>
                         </CardContent>
