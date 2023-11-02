@@ -1,6 +1,7 @@
 import axios from 'axios';
 import './FoodItem.css';
 import { Card, CardActions, CardContent, Typography, Paper, Grid, Button } from '@mui/material';
+import { Delete, ShoppingCart } from '@mui/icons-material';
 
 function FoodItem(props) {
 
@@ -46,7 +47,6 @@ function FoodItem(props) {
                     </Card>
                 </Paper>
             </Grid>
-            {/* <li className={props.purchased ? 'highlight' : 'normal'}>{props.quantity} {props.unit} of {props.name}</li> */}
         </>
     )
 
