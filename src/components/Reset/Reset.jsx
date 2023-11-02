@@ -1,5 +1,7 @@
 import axios from "axios";
 import swal from "sweetalert";
+import Button from '@mui/material/Button';
+
 function Reset(props) {
 
     const resetPurchaseStatus = () => {
@@ -37,7 +39,9 @@ function Reset(props) {
 
     };
 
-    return <button onClick={resetPurchaseStatus}>Reset</button>
+    // return <button onClick={resetPurchaseStatus}>Reset</button>
+    return <Button onClick={resetPurchaseStatus} color="secondary">Reset</Button>
+    
 
 }
 
