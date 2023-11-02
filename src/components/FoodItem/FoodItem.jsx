@@ -46,8 +46,6 @@ function FoodItem(props) {
                     </Card>
                 </Paper>
             </Grid>
-            {/* <li className={props.purchased ? 'highlight' : 'normal'}>{props.quantity} {props.unit} of {props.name}</li> */}
-        </>
     )
 
 }
