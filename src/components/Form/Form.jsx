@@ -32,7 +32,6 @@ function Form(props) {
     };
 
 
-
     return (
         <form onSubmit={addItem} id="input">
             Item: <input className="user-input" type="text" onChange={e => setNewItem(e.target.value)} required /><br></br>
