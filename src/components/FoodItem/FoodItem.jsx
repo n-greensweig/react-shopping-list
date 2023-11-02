@@ -1,6 +1,7 @@
 import axios from 'axios';
 import './FoodItem.css';
 import { Card, CardActions, CardContent, Typography, Paper, Grid, Button } from '@mui/material';
+import { Check, Delete, Send, ShoppingCart } from '@mui/icons-material';
 
 function FoodItem(props) {
 
@@ -32,22 +33,19 @@ function FoodItem(props) {
     };
 
     return (
-        <>
             <Grid item spacing={3}>
                 <Paper elevation={5}>
                     <Card>
                         <CardContent>
                             <Typography>{props.quantity} {props.unit} of {props.name}</Typography>
                             <CardActions>
-                                <Button variant='contained' onClick={togglePurchased}>{props.purchased ? 'Purchased!' : 'Buy'}</Button>
-                                <Button variant='outlined' id='delete-button' onClick={deleteItem}>Delete</Button>
+                                <Button variant='contained' onClick={togglePurchased} startIcon={<ShoppingCart />}>{props.purchased ? 'Purchased!' : 'Buy'}</Button>
+                                <Button variant='outlined' id='delete-button' onClick={deleteItem} startIcon={<Delete />}>Delete</Button>
                             </CardActions>
                         </CardContent>
                     </Card>
                 </Paper>
             </Grid>
-            {/* <li className={props.purchased ? 'highlight' : 'normal'}>{props.quantity} {props.unit} of {props.name}</li> */}
-        </>
     )
 
 }
