@@ -33,7 +33,6 @@ function FoodItem(props) {
     };
 
     return (
-        <>
             <Grid item spacing={3}>
                 <Paper elevation={5}>
                     <Card>
@@ -47,7 +46,6 @@ function FoodItem(props) {
                     </Card>
                 </Paper>
             </Grid>
-        </>
     )
 
 }
