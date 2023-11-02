@@ -1,7 +1,7 @@
 import axios from 'axios';
 import './FoodItem.css';
 import { Card, CardActions, CardContent, Typography, Paper, Grid, Button } from '@mui/material';
-import { Check, Delete, Send, ShoppingCart } from '@mui/icons-material';
+import { Delete, ShoppingCart } from '@mui/icons-material';
 
 function FoodItem(props) {
 
