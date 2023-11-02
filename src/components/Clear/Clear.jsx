@@ -1,5 +1,6 @@
 import axios from 'axios';
 import swal from "sweetalert";
+import Button from '@mui/material/Button';
 
 function Clear(props) {
 
@@ -33,8 +34,9 @@ function Clear(props) {
 
     };
 
-    return <button onClick={clearStatus} id='clear-button'>Clear</button>;
-
+    return <Button onClick={clearStatus} id='clear-button' variant="outlined" color="error">
+  Clear
+</Button>;
 };
 
 

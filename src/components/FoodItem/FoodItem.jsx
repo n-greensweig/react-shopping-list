@@ -39,13 +39,15 @@ function FoodItem(props) {
                         <CardContent>
                             <Typography>{props.quantity} {props.unit} of {props.name}</Typography>
                             <CardActions>
-                                <Button variant='contained' onClick={togglePurchased} startIcon={<ShoppingCart />}>{props.purchased ? 'Purchased!' : 'Buy'}</Button>
-                                <Button variant='outlined' id='delete-button' onClick={deleteItem} startIcon={<Delete />}>Delete</Button>
+                                <Button variant='contained' onClick={togglePurchased}>{props.purchased ? 'Purchased!' : 'Buy'}</Button>
+                                <Button variant='outlined' id='delete-button' onClick={deleteItem}>Delete</Button>
                             </CardActions>
                         </CardContent>
                     </Card>
                 </Paper>
             </Grid>
+            {/* <li className={props.purchased ? 'highlight' : 'normal'}>{props.quantity} {props.unit} of {props.name}</li> */}
+        </>
     )
 
 }
